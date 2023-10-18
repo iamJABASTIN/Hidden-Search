@@ -1,0 +1,55 @@
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg,violet, cornflowerblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    overflow:hidden;
+    margin:0;
+}
+
+.input {
+    background-color: white;
+    width:50px;
+    height:50px;
+    border:0;
+    border-radius: 7px;
+    padding:15px;
+    font-size: 18px;
+    transition:width 0.3s ease;
+}
+.search{
+    position: relative;
+    height: 50px;
+}
+button{
+    cursor: pointer;
+    width:50px;
+    font-size: 24px;
+    color:blue;
+    background-color: white;
+    height:50px;
+    position:absolute;
+    left:0;
+    top:0;
+    border: 0;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.input:focus , .btn:focus {
+    outline:none;
+}
+
+.search.active .input{
+    width:200px;
+}
+
+.search.active .btn{
+    transform: translateX(198px);
+}
