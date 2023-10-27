@@ -22,6 +22,7 @@ body {
     padding:15px;
     font-size: 18px;
     transition:width 0.3s ease;
+    caret-color : violet;
 }
 .search{
     position: relative;
